@@ -26,7 +26,7 @@ var greatestFear =
 
 //Create a variable called devMountainGoal that is null because we are just starting out
 
- var devMountainGoal = null;
+ let devMountainGoal = null;
 
 //////////////////PROBLEM 6////////////////////
 
@@ -46,7 +46,9 @@ greeting("Ryan");
 //Write a function expression called newGreeting.
 //Give it the same functionality as the function greeting in Problem 6.
 
-var newGreeting = function (name)
+function newGreeting () {
+  return greeting ()
+};
 //////////////////PROBLEM 8////////////////////
 
 //Create an array called groceries with the values
@@ -83,15 +85,14 @@ var devMountainClassPet = (dog.name);
 // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
 // Code here
-let nameCheck (name) {
-  if (name === "Steven"); {
+function nameCheck (name) {
+  if (name = "Steven"); {
     return "What is up Steven?";
-  } else if (name === "Bryan"); {
-    return "Hey Bryan!";
-  }else {
-    return `Cool name, ${name}`;
+  } if (name = "Bryan") {
+    return "Hey Bryan!"
+  } else {
+    return `Cool name, ${name}!`
   }
-
 };
 
 //////////////////PROBLEM 11////////////////////
