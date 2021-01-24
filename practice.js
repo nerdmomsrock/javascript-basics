@@ -6,176 +6,178 @@ var myName = "Ryan";
 
 //////////////////PROBLEM 2////////////////////
 
-//Create a variable called myAge that is a number data type
+//Create a variable called myAge that is a number data type//
 
 var myAge = 40;
 
-//////////////////PROBLEM 3////////////////////
+// //////////////////PROBLEM 3////////////////////
 
-//Create a variable called lovesCode that is a boolean data type
+// //Create a variable called lovesCode that is a boolean data type
 
 var lovesCode = true;
 
-//////////////////PROBLEM 4////////////////////
+// //////////////////PROBLEM 4////////////////////
 
-//Create a variable called greatestFear that is undefined because we fear nothing
+// //Create a variable called greatestFear that is undefined because we fear nothing
 
-var greatestFear =
+ var greatestFear 
 
-//////////////////PROBLEM 5////////////////////
+// //////////////////PROBLEM 5////////////////////
 
-//Create a variable called devMountainGoal that is null because we are just starting out
+// //Create a variable called devMountainGoal that is null because we are just starting out
 
- let devMountainGoal = null;
+let devMountainGoal = null;
 
-//////////////////PROBLEM 6////////////////////
+// //////////////////PROBLEM 6////////////////////
 
-//Create a function declaration called greeting that
-//accepts name as its only parameter.
-//greeting should return the string "Hello, "
-//plus the value of the name parameter.
+// //Create a function declaration called greeting that
+// //accepts name as its only parameter.
+// //greeting should return the string "Hello, "
+// //plus the value of the name parameter.
 
 function greeting (name)  {
   
-  return `Hello ${name}`;
+   return `Hello, ${name}`;
 
-}
-greeting("Ryan");
-//////////////////PROBLEM 7////////////////////
+ };
 
-//Write a function expression called newGreeting.
-//Give it the same functionality as the function greeting in Problem 6.
+// //////////////////PROBLEM 7////////////////////
 
-function newGreeting () {
-  return greeting ()
-};
-//////////////////PROBLEM 8////////////////////
+// //Write a function expression called newGreeting.
+// //Give it the same functionality as the function greeting in Problem 6.
 
-//Create an array called groceries with the values
-//"apples", "milk", "eggs", "bread"
+ function newGreeting (name) {
+   return greeting (name)
+ };
+// //////////////////PROBLEM 8////////////////////
 
-var groceries = ["apples", "milk", "eggs", "bread"]
+// //Create an array called groceries with the values
+// //"apples", "milk", "eggs", "bread"
 
-//////////////////PROBLEM 9////////////////////
+ var groceries = ["apples", "milk", "eggs", "bread"];
 
-//Create an object saved to the variable dog.
-//The dog object should have the following properties:
-//name (a string), color (a string), age (a number),
-//and goodBoy (a boolean).
+// //////////////////PROBLEM 9////////////////////
 
-var dog = {
-  name: "Fido", 
-  color: "brown",
-  age: 2,
-  goodBoy: true
-};
+// //Create an object saved to the variable dog.
+// //The dog object should have the following properties:
+// //name (a string), color (a string), age (a number),
+// //and goodBoy (a boolean).
 
-//...access the dog's name from the object and assign it to a
-//variable called devMountainClassPet.
+ var dog = {
+name: "Fido", 
+color: "brown",
+age: 2,
+goodBoy: true
+ };
+
+// //...access the dog's name from the object and assign it to a
+// //variable called devMountainClassPet.
 
 var devMountainClassPet = (dog.name);
 
-//////////////////PROBLEM 10////////////////////
+// //////////////////PROBLEM 10////////////////////
 
-//Write a function called nameCheck that takes in a name parameter.
-//nameCheck should check if the name equals 'Steven'. If it does,
-// return 'What is up Steven?'
-//If the name parameter is Bryan, return 'Hey Bryan!'
-// If the name parameter is anything else, return 'Cool name, NAMEPARAM'
-// with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
+// //Write a function called nameCheck that takes in a name parameter.
+// //nameCheck should check if the name equals 'Steven'. If it does,
+// // return 'What is up Steven?'
+// //If the name parameter is Bryan, return 'Hey Bryan!'
+// // If the name parameter is anything else, return 'Cool name, NAMEPARAM'
+// // with NAMEPARAM being the name parameter being passed in (not literally NAMEPARAM)
 
-// Code here
+// // Code here
 function nameCheck (name) {
-  if (name = "Steven"); {
-    return "What is up Steven?";
-  } if (name = "Bryan") {
+  if (name === "Steven") {
+    return "What is up Steven?"
+  } if (name === "Bryan") {
     return "Hey Bryan!"
   } else {
-    return `Cool name, ${name}!`
+    return `Cool name, ${name}`
   }
 };
+   
 
-//////////////////PROBLEM 11////////////////////
 
-// Create a function called add that takes in two parameters
-// that will be numbers.
-// The add function should return the two parameters added together
+// //////////////////PROBLEM 11////////////////////
 
-//Code Here
-function add (num1, num2) {
-  return num1 + num2 
-};
-add(3, 5)
-//Now invoke add, passing in the numbers 3 and 4
-//storing the result in the variable mathSum.
+// // Create a function called add that takes in two parameters
+// // that will be numbers.
+// // The add function should return the two parameters added together
 
-//Code Here
-var mathSum = add (3,4)
-//////////////////PROBLEM 12////////////////////
+// //Code Here
+ function add (num1, num2) {
+   return num1 + num2 
+ };
+ add(3, 5)
+// //Now invoke add, passing in the numbers 3 and 4
+// //storing the result in the variable mathSum.
 
-//Write a function called faveColorFinder that takes in one parameter called color
-// that will be a string.
-// If the passed in color equals 'red', return 'red is a great color'
-// If the passed in color equals 'green', return 'green is a solid favorite color'
-// If the passed in color equals 'black', return 'so trendy'
-// Otherwise, you should return the string 'you need to evaluate your favorite color choice'
+// //Code Here
+ var mathSum = add (3,4)
+// //////////////////PROBLEM 12////////////////////
 
-// Code here
-function faveColorFinder (color) {
-  if (color === "red") {
-  return "Red is a great color!"
-  }else if (color === "green"){
-    return "Green is a solid favorite color!"
-  }else if (color === "black") {
-    return "So trendy!"
-  }else { 
-  return "You need to evaluate your favorite color choice!"
-  }
-};
-//////////////////PROBLEM 13////////////////////
+// //Write a function called faveColorFinder that takes in one parameter called color
+// // that will be a string.
+// // If the passed in color equals 'red', return 'red is a great color'
+// // If the passed in color equals 'green', return 'green is a solid favorite color'
+// // If the passed in color equals 'black', return 'so trendy'
+// // Otherwise, you should return the string 'you need to evaluate your favorite color choice'
 
-let duck = "cute";
+// // Code here
+ function faveColorFinder (color) {
+   if (color === "red") {
+   return "red is a great color"
+   }else if (color === "green"){
+     return "green is a solid favorite color"
+ }else if (color === "black") {
+    return "so trendy"
+   }else { 
+   return "you need to evaluate your favorite color choice"
+   }
+ };
+// //////////////////PROBLEM 13////////////////////
 
-function bathroom() {
-  let rubberDuck = "squeaky";
+ let duck = "cute";
+
+ function bathroom() {
+   let rubberDuck = "squeaky";
   function bathtub() {
     let sailorDuck = "nautical";
   }
-}
+};
 
 function pond() {
-  let realDuck = "fluffy";
+let realDuck = "fluffy";
 }
 
-//There are 4 variables above: duck, rubberDuck, sailorDuck and realDuck
-//all within different scopes.
-//Given the functions and variables above, edit the arrays
-//below to contain only the appropriate variable names
-//as strings.
+// //There are 4 variables above: duck, rubberDuck, sailorDuck and realDuck
+// //all within different scopes.
+// //Given the functions and variables above, edit the arrays
+// //below to contain only the appropriate variable names
+// //as strings.
 
-//This array should contain the variable names (as strings) accessible in the global scope.
+// //This array should contain the variable names (as strings) accessible in the global scope.
 let globalScope = ["duck"]
-//This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["sailorDuck", "rubberDuck"];
+// //This array should contain the variable names (as strings) accessible in the bathroom function.
+let bathroomScope = ["rubberDuck", "sailorDuck"];
 
-//This array should contain the variable names (as strings) accessible in the bathtub function.
+// //This array should contain the variable names (as strings) accessible in the bathtub function.
 let bathtubScope = ["sailorDuck"];
 
-//This array should contain the variable names (as strings) accessible in the pond function.
+// //This array should contain the variable names (as strings) accessible in the pond function.
 let pondScope = ["realDuck"];
 
-//////////////////PROBLEM 14////////////////////
+// //////////////////PROBLEM 14////////////////////
 
-//Create a variable called age with your age assigned to you
+// //Create a variable called age with your age assigned to you
 
-// Code Here
+// // Code Here
 let age = 40;
-// FLASH FORWARD TO NEXT YEAR
-// reassign the value of age to be one greater than it was, because, we all get older
+// // FLASH FORWARD TO NEXT YEAR
+// // reassign the value of age to be one greater than it was, because, we all get older
 age = age + 1
-// Code Here
+// // Code Here
 
-// Good news! We can live forever. Set your age to 999
+// // Good news! We can live forever. Set your age to 999
 
-// Code Here
+// // Code Here
 age = 999
