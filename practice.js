@@ -46,8 +46,8 @@ function greeting (name)  {
 // //Write a function expression called newGreeting.
 // //Give it the same functionality as the function greeting in Problem 6.
 
- function newGreeting (name) {
-   return greeting (name)
+ let newGreeting = function (name){
+    return `Hello, ${name}`;
  };
 // //////////////////PROBLEM 8////////////////////
 
@@ -147,7 +147,7 @@ function nameCheck (name) {
 
 function pond() {
 let realDuck = "fluffy";
-}
+};
 
 // //There are 4 variables above: duck, rubberDuck, sailorDuck and realDuck
 // //all within different scopes.
@@ -158,13 +158,13 @@ let realDuck = "fluffy";
 // //This array should contain the variable names (as strings) accessible in the global scope.
 let globalScope = ["duck"]
 // //This array should contain the variable names (as strings) accessible in the bathroom function.
-let bathroomScope = ["rubberDuck", "sailorDuck"];
+let bathroomScope = ["duck", "rubberDuck"];
 
 // //This array should contain the variable names (as strings) accessible in the bathtub function.
-let bathtubScope = ["sailorDuck"];
+let bathtubScope = ["duck", "rubberDuck", "sailorDuck"];
 
 // //This array should contain the variable names (as strings) accessible in the pond function.
-let pondScope = ["realDuck"];
+let pondScope = ["duck","realDuck"];
 
 // //////////////////PROBLEM 14////////////////////
 
